@@ -1,24 +1,25 @@
 import Vue from 'vue'
-import Router, { RouteConfig } from 'vue-router';
+import Router, { RouterOptions, RouteConfig } from 'vue-router';
 
 import loginPage from '../views/login'
 import indexPage from '../views/Index'
 
 Vue.use(Router)
 
-const routers: Array<RouteConfig> = [{
+const routers: RouteConfig[]= [{
     path: '/login',
     name: 'login',
-    component: loginPage
+    component: loginPage as any
 }, {
     path: '/',
     name: 'index',
     component: indexPage
 }];
 
-const router = new Router({
+let options: RouterOptions = {
     mode: 'hash',
     routes: routers
-})
+}
+const router = new Router(options)
 
 export default router;
