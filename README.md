@@ -1,4 +1,6 @@
-# vue-composition-api-tsx-example
+# tsx-vue-starter
+
+tsx + vue + vue-router + vuex + compositon-api
 
 ## Project setup
 ```
