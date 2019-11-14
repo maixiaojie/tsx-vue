@@ -1,6 +1,6 @@
 # tsx-vue-starter
 
-tsx + vue + vue-router + vuex + compositon-api
+vue + vue-composition-api + TypeScript + tsx + vue-router + Vuex 项目实战
 
 ## Project setup
 ```
